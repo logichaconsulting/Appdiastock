@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".BaseActivityRowFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bgBaseRowActivity">
+        <ImageView
+            android:id="@+id/baserowimage"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+
+            android:gravity="center"
+            android:padding="5dp"
+            android:src="@drawable/ic_action_element"
+            android:textColor="@color/bgBaseRowActivity" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+            <!-- TODO: Update blank fragment layout -->
+            <TextView
+                android:id="@+id/baserowtab"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@drawable/text_rounded_gray_border_top"
+                android:fontFamily="sans-serif-medium"
+                android:text="Article description"
+                android:textAllCaps="false"
+                android:textColor="@color/defaultAppColor"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/baserowdata"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="@drawable/textlines"
+                android:fontFamily="sans-serif-light"
+                android:text="dati"
+
+                android:textColor="@color/defaultAppColor"
+                android:textSize="15dp" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

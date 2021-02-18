@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#26A30D</color>
+    <color name="colorPrimaryDark">#3e2d70</color>
+    <color name="bgBackSideColor">#f4f0ff</color>
+    <color name="bgTitleLeft">#594691</color>
+    <color name="bgTitleRight">#ffffff</color>
+    <color name="bgContentTop">#594691</color>
+    <color name="bgContent">#ffffff</color>
+
+    <color name="bgLayout">#CC9C9C9C</color>
+
+    <color name="contentDividerLine">#e0e0e0</color>
+    <color name="contentBadgeTitle">#a9a9a9</color>
+    <color name="titleBadgeTitle">#adafb1</color>
+    <color name="titleBadgeText">#868585</color>
+    <color name="mainTextColor">#343d43</color>
+    <color name="btnRequest">#ffbf12</color>
+    <color name="itemColor">#D2D4D8</color>
+    <color name="menuItemBgColor">#F3F3F3</color>
+    <color name="menuItemColor">#18bc9c</color>
+    <color name="headAppColor">#2c2c2c</color>
+    <color name="defaultAppColor">#2c2c2c</color>
+    <color name="borderWarning">#C62828</color>
+    <color name="solidWarning">#FFF280</color>
+    <color name="warmAppColor">#df691a</color>
+    <color name="actionButtonColor">#AD1457</color>
+    <color name="actionButtonColorHover">#BE6F92</color>
+    <color name="actionButtonColor2">#6A1B9A</color>
+    <color name="actionButtonColorHover2">#82549E</color>
+    <color name="bgButton">#2c2c2c</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="bgBaseRowActivity">#fff</color>
+    <color name="bgMenuApp">#f1f3f4</color>
+    <color name="bgSplash">#2c2c2c</color>
+</resources>

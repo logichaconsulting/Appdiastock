@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.diastock.app">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <activity android:name="com.diastock.app.PickingSplitter"></activity>
+        <activity
+            android:name="com.diastock.app.MarkShippingPackages"
+            android:label="@string/ClosePicking" />
+        <activity android:name="com.diastock.app.InboundPrintLogunit" />
+        <activity
+            android:name="com.diastock.app.StartActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.diastock.app.CreateArticle" />
+        <activity android:name="com.diastock.app.EndCardboard" />
+        <activity android:name="com.diastock.app.LocationInquiry" />
+        <activity android:name="com.diastock.app.LogUnitInquiry" />
+        <activity android:name="com.diastock.app.InboundClose" />
+        <activity android:name="com.diastock.app.ArticleInquiry" />
+        <activity
+            android:name="com.diastock.app.Inbound"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.diastock.app.LoginActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.diastock.app.MainActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.diastock.app.ManualLoad"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.diastock.app.ManualHandling"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.diastock.app.ManualDownload"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.diastock.app.SplashActivity"
+            android:theme="@style/SplashTheme" />
+        <activity
+            android:name="com.diastock.app.Settings"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.diastock.app.ClosedInventory"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.diastock.app.FreeInbound"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.diastock.app.AutomaticPicking"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

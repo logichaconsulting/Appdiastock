@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/servernametab"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:background="@drawable/mini_tab_rounded_blue_border"
+                android:text="Indirizzo server cloud"
+                android:textColor="#fff"
+                android:textSize="8dp" />
+
+            <com.diastock.app.InputArea
+                android:id="@+id/txtCloudServer"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/input_rounded_blue_border"
+                android:hint="SERVER URI"
+                android:inputType="text"
+                android:maxLines="1"
+                android:text="http://ipv4-rochemws-magazzini-virtuali.westeurope.cloudapp.azure.com:3389" />
+
+            <TextView
+                android:id="@+id/dbnametab"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/mini_tab_rounded_blue_border"
+                android:text="Database"
+                android:textColor="#fff"
+                android:textSize="8dp" />
+
+            <com.diastock.app.InputArea
+                android:id="@+id/txtDb"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/input_rounded_blue_border"
+                android:hint="DATABASE"
+                android:inputType="text"
+                android:maxLines="1"
+                android:text="" />
+
+            <CheckBox
+                android:id="@+id/chkMultiComp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Multicompany" />
+
+            <Button
+            android:id="@+id/saveSettingsButton"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/input_rounded_blue_solid"
+            android:drawableLeft="@drawable/ic_action_save"
+            android:text="Salva"
+            android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/exitAppButton"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/input_rounded_blue_solid"
+                android:drawableLeft="@drawable/ic_action_activity_back"
+                android:text="Chiudi App"
+                android:textColor="#fff" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
