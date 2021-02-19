@@ -1486,7 +1486,7 @@ public class Inbound extends AppCompatActivity implements TaskDelegate, BaseActi
     }
 
     public void taskCompletionResult(String result, int step) throws Exception {
-        if (!cloudConnector.getPostExceuteMethod().equals("mobile.logicha.wcftester.Inbound.FinalStep()")) {
+        if (!cloudConnector.getPostExceuteMethod().equals("com.diastock.app.Inbound.FinalStep()")) {
             Object[] params = {null, result.equals("OK") ? step : 0};
             this.getClass().getMethods()[0].invoke(this, params);
         } else {

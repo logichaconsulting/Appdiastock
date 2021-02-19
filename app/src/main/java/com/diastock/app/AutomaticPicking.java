@@ -1582,10 +1582,10 @@ public class AutomaticPicking extends AppCompatActivity implements TaskDelegate,
 
     @Override
     public void taskCompletionResult(String result, int step) throws Exception {
-        if (!cloudConnector.getPostExceuteMethod().equals("mobile.logicha.wcftester.AutomaticPicking.FinalStep()")) {
+        if (!cloudConnector.getPostExceuteMethod().equals("com.diastock.app.AutomaticPicking.FinalStep()")) {
             Object[] params = {null, result.equals("OK") ? step : 0};
 
-            if (!cloudConnector.getPostExceuteMethod().equals("mobile.logicha.wcftester.AutomaticPicking.FindNextMission(int)"))
+            if (!cloudConnector.getPostExceuteMethod().equals("com.diastock.app.AutomaticPicking.FindNextMission(int)"))
                 this.getClass().getMethods()[0].invoke(this, params);
             else
                 this.getClass().getMethod("FindNextMission", int.class).invoke(this, new Object[] {step});//FINDNEXTMISSION

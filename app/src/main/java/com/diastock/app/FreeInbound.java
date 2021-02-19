@@ -645,7 +645,7 @@ public class FreeInbound extends AppCompatActivity implements TaskDelegate, Base
     public void taskCompletionResult(String result, int step) throws Exception {
 
 
-        if (!cloudConnector.getPostExceuteMethod().equals("mobile.logicha.wcftester.FreeInbound.FinalStep()"))
+        if (!cloudConnector.getPostExceuteMethod().equals("com.diastock.app.FreeInbound.FinalStep()"))
         //this.getClass().getMethod(cloudConnector.getPostExceuteMethod()).invoke (this, (result.equals("OK") ? true :false));
         {
             if (DataExchange.getInstance().getStep() == 'K')

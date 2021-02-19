@@ -559,7 +559,7 @@ public class ManualDownload extends AppCompatActivity implements TaskDelegate, B
     public void taskCompletionResult(String result, int step) throws Exception {
 
         DataExchange.getInstance().setFunctionNumber(menuItem.getFunctionNumber());
-        if (!cloudConnector.getPostExceuteMethod().equals("mobile.logicha.wcftester.ManualDownload.FinalStep()"))
+        if (!cloudConnector.getPostExceuteMethod().equals("com.diastock.app.ManualDownload.FinalStep()"))
         //this.getClass().getMethod(cloudConnector.getPostExceuteMethod()).invoke (this, (result.equals("OK") ? true :false));
         {
             Object[] params = {null, result.equals("OK") ? step : 0};

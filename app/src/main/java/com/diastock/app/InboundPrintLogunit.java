@@ -159,7 +159,7 @@ public class InboundPrintLogunit extends AppCompatActivity implements TaskDelega
 
     @Override
     public void taskCompletionResult(String result, int step) throws Exception {
-        if (!cloudConnector.getPostExceuteMethod().equals("mobile.logicha.wcftester.InboundPrintLogunit.FinalStep()"))
+        if (!cloudConnector.getPostExceuteMethod().equals("com.diastock.app.InboundPrintLogunit.FinalStep()"))
         //this.getClass().getMethod(cloudConnector.getPostExceuteMethod()).invoke (this, (result.equals("OK") ? true :false));
         {
             Object[] params = {null, result.equals("OK") ? step : 0};

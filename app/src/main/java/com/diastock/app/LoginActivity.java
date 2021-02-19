@@ -9,8 +9,10 @@ import android.content.res.Resources;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.provider.BaseColumns;
+
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.Menu;
@@ -247,6 +249,20 @@ public class LoginActivity extends AppCompatActivity implements TaskDelegate, Vi
             AlertMessageBuilder alertMessageBuilder = new AlertMessageBuilder();
             alertMessageBuilder.BuildDialog(getResources().getString(R.string.error), message, AlertMessageBuilder.Severity.ERROR, this);
             alertMessageBuilder.Show();
+        }
+    }
+
+    @Override
+    public void onResume() {
+        // Do Here what ever you want do on back press;
+        super.onResume();
+        EditText txtPassword = (EditText) findViewById(R.id.password);
+        EditText txtUser = (EditText) findViewById(R.id.user);
+
+        txtPassword.setText("");
+
+        if (!txtUser.getText().equals("")) {
+            txtPassword.requestFocus();
         }
     }
 

@@ -219,7 +219,7 @@ public class LocationInquiry extends AppCompatActivity implements TaskDelegate, 
 
     @Override
     public void taskCompletionResult(String result, int step) throws Exception {
-        if (!cloudConnector.getPostExceuteMethod().equals("mobile.logicha.wcftester.LocationInquiry.FinalStep()")) {
+        if (!cloudConnector.getPostExceuteMethod().equals("com.diastock.app.LocationInquiry.FinalStep()")) {
             Object[] params = {null, result.equals("OK") ? step : 0};
             this.getClass().getMethods()[0].invoke(this, params);
         }

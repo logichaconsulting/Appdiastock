@@ -10,6 +10,6 @@
         android:left="2dp"
         android:right="2dp"
         android:top="2dp"></padding>
-    <solid android:color="@color/warmAppColor" />
-    <stroke android:color="@color/warmAppColor" android:width="2dp" />
+    <solid android:color="@color/bgIconTab" />
+    <stroke android:color="@color/bgIconTab" android:width="2dp" />
 </shape>

@@ -628,7 +628,7 @@ public class ClosedInventory extends AppCompatActivity implements TaskDelegate, 
 
     public void taskCompletionResult(String result, int step) throws Exception {
 
-        if (!cloudConnector.getPostExceuteMethod().equals("mobile.logicha.wcftester.ClosedInventory.FinalStep()"))
+        if (!cloudConnector.getPostExceuteMethod().equals("com.diastock.app.ClosedInventory.FinalStep()"))
         //this.getClass().getMethod(cloudConnector.getPostExceuteMethod()).invoke (this, (result.equals("OK") ? true :false));
         {
 //            Method[] methods =  this.getClass().getMethods();
@@ -639,7 +639,7 @@ public class ClosedInventory extends AppCompatActivity implements TaskDelegate, 
 //                    methods[x].invoke(this, params);
 //                }
 
-            //this.getClass().getMethod("mobile.logicha.wcftester.ManualLoad.AcceptText(java.lang.String,int)").invoke(this, params);
+            //this.getClass().getMethod("com.diastock.app.ManualLoad.AcceptText(java.lang.String,int)").invoke(this, params);
 
             Object[] params = {null, result.equals("OK") ? step : 0};
             this.getClass().getMethods()[0].invoke(this, params);

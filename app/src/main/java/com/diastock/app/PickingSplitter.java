@@ -157,7 +157,7 @@ public class PickingSplitter extends AppCompatActivity implements TaskDelegate, 
 
     @Override
     public void taskCompletionResult(String result, int step) throws Exception {
-        if (!cloudConnector.getPostExceuteMethod().equals("mobile.logicha.wcftester.PickingSplitter.FinalStep()")) {
+        if (!cloudConnector.getPostExceuteMethod().equals("com.diastock.app.PickingSplitter.FinalStep()")) {
             if (!Functions.isNullOrEmpty(DataExchange.getInstance().getCardboard())) {
                 //findNextOrder();
                 //base.InitializeItem(qty, String.format("%.0f", DataExchange.getInstance().getSplitqty()));

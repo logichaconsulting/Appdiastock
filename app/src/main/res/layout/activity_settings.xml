@@ -69,21 +69,21 @@
                 android:text="Multicompany" />
 
             <Button
-            android:id="@+id/saveSettingsButton"
-            android:layout_width="280dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/input_rounded_blue_solid"
-            android:drawableLeft="@drawable/ic_action_save"
-            android:text="Salva"
-            android:textColor="#fff" />
+                android:id="@+id/saveSettingsButton"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/input_rounded_green_solid"
+                android:drawableLeft="@drawable/ic_action_save"
+                android:text="Salva"
+                android:textColor="#fff" />
 
             <Button
                 android:id="@+id/exitAppButton"
                 android:layout_width="280dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:background="@drawable/input_rounded_blue_solid"
+                android:background="@drawable/input_rounded_green_solid"
                 android:drawableLeft="@drawable/ic_action_activity_back"
                 android:text="Chiudi App"
                 android:textColor="#fff" />

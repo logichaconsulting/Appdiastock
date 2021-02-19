@@ -652,7 +652,7 @@ public class ManualHandling extends AppCompatActivity implements TaskDelegate, B
 
     public void taskCompletionResult(String result,int step) throws Exception {
 
-        if (!cloudConnector.getPostExceuteMethod().equals("mobile.logicha.wcftester.ManualHandling.FinalStep()"))
+        if (!cloudConnector.getPostExceuteMethod().equals("com.diastock.app.ManualHandling.FinalStep()"))
         //this.getClass().getMethod(cloudConnector.getPostExceuteMethod()).invoke (this, (result.equals("OK") ? true :false));
         {
             Object[] params = {null, result.equals("OK") ? step : 0};

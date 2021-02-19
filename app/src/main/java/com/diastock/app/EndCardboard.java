@@ -274,7 +274,7 @@ public class EndCardboard extends AppCompatActivity implements TaskDelegate, Bas
 
     @Override
     public void taskCompletionResult(String result, int step) throws Exception {
-        if (!cloudConnector.getPostExceuteMethod().equals("mobile.logicha.wcftester.EndCardboard.FinalStep()"))
+        if (!cloudConnector.getPostExceuteMethod().equals("com.diastock.app.EndCardboard.FinalStep()"))
         //this.getClass().getMethod(cloudConnector.getPostExceuteMethod()).invoke (this, (result.equals("OK") ? true :false));
         {
             Object[] params = {null, result.equals("OK") ? step : 0};

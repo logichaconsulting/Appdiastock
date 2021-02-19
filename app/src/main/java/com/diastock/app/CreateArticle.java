@@ -250,7 +250,7 @@ public class CreateArticle extends AppCompatActivity implements TaskDelegate, Ba
 
     @Override
     public void taskCompletionResult(String result, int step) throws Exception {
-        if (!cloudConnector.getPostExceuteMethod().equals("mobile.logicha.wcftester.CreateArticle.FinalStep()"))
+        if (!cloudConnector.getPostExceuteMethod().equals("com.diastock.app.CreateArticle.FinalStep()"))
         //this.getClass().getMethod(cloudConnector.getPostExceuteMethod()).invoke (this, (result.equals("OK") ? true :false));
         {
             Object[] params = {null, result.equals("OK") ? step : 0};
