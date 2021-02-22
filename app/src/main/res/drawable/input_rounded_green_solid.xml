@@ -10,7 +10,7 @@
         android:color="@color/bgIconTab"
         />
     // The desired corner radius. reduce it to keep it less rounded
-    <corners android:radius="5dp" />
+    <corners android:radius="10dp" />
 
     // Add your desired padding
     <padding

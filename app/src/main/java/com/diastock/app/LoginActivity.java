@@ -32,7 +32,7 @@ public class LoginActivity extends AppCompatActivity implements TaskDelegate, Vi
 
         ActionBar ab = getSupportActionBar();
         ab.setDisplayShowHomeEnabled(true);
-        ab.setIcon(R.drawable.ic_action_pack);
+        ab.setIcon(R.drawable.ic_action_diastock);
         ab.setTitle("  " + getResources().getString(R.string.app_name));
         setContentView(R.layout.activity_login);
 

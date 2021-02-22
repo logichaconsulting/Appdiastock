@@ -76,7 +76,9 @@
                 android:background="@drawable/input_rounded_green_solid"
                 android:drawableLeft="@drawable/ic_action_save"
                 android:text="Salva"
-                android:textColor="#fff" />
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/exitAppButton"
@@ -86,7 +88,9 @@
                 android:background="@drawable/input_rounded_green_solid"
                 android:drawableLeft="@drawable/ic_action_activity_back"
                 android:text="Chiudi App"
-                android:textColor="#fff" />
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

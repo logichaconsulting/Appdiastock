@@ -10,6 +10,7 @@
     <color name="bgButtonRow">#009cab</color>
     <color name="bgLayout">#ffffff</color>
     <color name="bgIconTab">#009cab</color>
+    <color name="bgCamera">#7BBDD6</color>
     <color name="contentDividerLine">#e0e0e0</color>
     <color name="contentBadgeTitle">#a9a9a9</color>
     <color name="titleBadgeTitle">#adafb1</color>
